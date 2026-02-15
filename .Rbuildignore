@@ -4,7 +4,6 @@
 ^cran-comments\.md$
 ^vtest$
 ^inst/$
-^\.travis\.yml$
 ^docs$
 ^README\.Rmd$
 ^README-.*\.png$

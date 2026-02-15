@@ -211,13 +211,13 @@ GeomMosaicText <- ggplot2::ggproto(
     if(!repel) {
       if(!as.label) {
         GeomChosen <- GeomText
-        ggplot2:::ggname("geom_mosaic_text", grobTree(
+        ggname("geom_mosaic_text", grobTree(
           GeomRect$draw_panel(sub, panel_scales, coord),
           GeomChosen$draw_panel(text, panel_scales, coord, check_overlap = check_overlap)
         ))
       } else if(as.label) {
         GeomChosen <- GeomLabel
-        ggplot2:::ggname("geom_mosaic_text", grobTree(
+        ggname("geom_mosaic_text", grobTree(
           GeomRect$draw_panel(sub, panel_scales, coord),
           rlang::exec(GeomChosen$draw_panel, text, panel_scales, coord)
         ))
@@ -228,7 +228,7 @@ GeomMosaicText <- ggplot2::ggproto(
       } else if(as.label) {
         GeomChosen <- GeomLabelRepel
       }
-      ggplot2:::ggname("geom_mosaic_text", grobTree(
+      ggname("geom_mosaic_text", grobTree(
         GeomRect$draw_panel(sub, panel_scales, coord),
         # GeomChosen$draw_panel(text, panel_scales, coord, !!!repel_params)
         rlang::exec(GeomChosen$draw_panel, text, panel_scales, coord, !!!repel_params)

@@ -68,3 +68,8 @@ with_seed_null <- function(seed, code) {
 
 
 
+
+ggname <- function(prefix, grob) {
+  grob$name <- grid::grobName(grob, prefix)
+  grob
+}

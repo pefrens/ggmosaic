@@ -195,7 +195,7 @@ GeomMosaicJitter <- ggplot2::ggproto(
     # sub$fill <- NA
     # sub$size <- sub$size/10
 
-      ggplot2:::ggname("geom_mosaic_jitter", grobTree(
+      ggname("geom_mosaic_jitter", grobTree(
       #GeomRect$draw_panel(sub, panel_scales, coord),
       GeomPoint$draw_panel(data, panel_scales, coord)
     ))
