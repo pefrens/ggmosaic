@@ -3,11 +3,7 @@
 
 <!-- badges: start -->
 
-[![CRAN
-Status](http://www.r-pkg.org/badges/version/ggmosaic)](https://cran.r-project.org/package=ggmosaic)
-[![CRAN RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/ggmosaic)](https://www.r-pkg.org/pkg/ggmosaic)
-[![R-CMD-check](https://github.com/haleyjeppson/ggmosaic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/haleyjeppson/ggmosaic/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/pefrens/ggmosaic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/pefrens/ggmosaic/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # ggmosaic <img src="man/figures/logo.png" align="right" width="120" />
@@ -22,7 +18,7 @@ You can install ggmosaic from github with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("haleyjeppson/ggmosaic")
+pak::pak("pefrens/ggmosaic")
 ```
 
 ## Example
